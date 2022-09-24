@@ -1,0 +1,189 @@
+@font-face {
+    font-family: futuroma-logo;
+    src: url(./fonts/logo_font.otf);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+footer {
+    width: 1100px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: white;
+}
+
+main {
+    width: 1100px;
+    margin: 0px auto;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 400px;
+    height: 100%;
+    background: url(./images/japan.gif);
+    position: relative;
+}
+
+.right {
+    width: 700px;
+}
+
+.left div {
+    padding: 20px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: futuroma-logo;
+    background-color: rgba(200, 0, 0, 0.795);
+
+    position: relative;
+    top: 600px;
+}
+
+.left div h1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: h1_animation 3s infinite;
+}
+
+@keyframes h1_animation {
+    50% {text-shadow: 13px 26px 20px blue;
+         font-size: 2.3rem;
+    }
+  }
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(240, 235, 235);
+}
+
+.right > * {
+    padding: 30px;
+}
+
+.info {
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+#hotshot {
+    font-family: futuroma-logo;
+    color: red;
+    text-shadow: 15%;
+    
+}
+
+
+.form {
+    background-color: rgba(200, 0, 0, 0.603);
+    height: 30vh;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    padding: 2px;
+    background-color: rgb(255, 51, 66);
+    border: 1px solid rgb(255,51,66);
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 1rem;
+}
+
+.create {
+    margin-top: 20px;
+}
+.create button{
+    font-family: futuroma-logo;
+    font-size: 2rem;
+    color: rgb(41, 38, 38);
+    text-shadow: 1px 1px 1px white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.create button:hover {
+    color: white;
+    text-shadow: 1px 1px 1px rgb(41, 38, 38);
+    transform: scale(1.1);
+}
+
+input,
+select {
+    height: 30px;
+    /* border: 1px solid black; */
+}
+
+.login {
+    font-size: 1.5rem;
+}
